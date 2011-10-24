@@ -1,0 +1,17 @@
+.clearfix { zoom: 1; }
+#mainmenu a {
+  float: none !important;
+}
+#content-column-left {
+  width: 564px;
+  padding-right: 46px;
+}
+#content-column-right {
+  width: 260px;
+}
+.gradient-textbox {
+  width: 220px;
+}
+.gradient-textarea {
+  width: 396px;
+}
