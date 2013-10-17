@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
   {% include "SiteHeader" %}
-     <title>{{article.title}} &laquo; {{page.title}} | {{site.name}}</title>
 	</head>
 	<body>
   <div id="wrap">
@@ -27,6 +26,21 @@
        <div class="blog-body clearfix">
         {% editable article.body %}
        </div>
+       {% if editmode %}
+            <div class="article-tags">
+                <div class="article-tag-icon"></div>
+                {% editable article.tags %}
+            </div>
+          {% else %}
+            {% unless article.tags == empty %}
+                <div class="cfx article-tags">
+                    <div class="article-tag-icon"></div>
+                    {% for tag in article.tags %}
+                        <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </div>
+            {% endunless %}
+       {% endif %}
        {% if article.comments %}
        <h2>{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>
 </h2>

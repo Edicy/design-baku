@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
   {% include "SiteHeader" %}
-   <title>{{site.name}} &raquo; {{page.title}}</title>
 	</head>
 	<body>
   <div id="wrap">

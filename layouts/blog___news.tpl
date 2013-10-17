@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   {% include "SiteHeader" %}
-  <title>{{site.name}} &raquo; {{page.title}}</title>
 </head>
 <body>
   <div id="wrap">
@@ -19,7 +18,18 @@
     <div class="innerwrap">
      <div id="content-column-left">
       {% include "Submenu" %}
-       <div id="content-inner">{% addbutton %} {% for article in articles %}
+       <div id="content-inner">
+        {% if tags %}
+            <div class="blog tagged-list-header">
+                <div class="header-tag-icon"></div>
+                {% if tags == empty %}
+                    {{ "no_posts_tagged" | lc }}
+                {% else %}
+                    {{ "posts_tagged" | lc }} '{{ tags | sort:"name" | map:"name" | join:"', '"}}'.
+                {% endif %}
+            </div>
+        {% endif %}
+       {% addbutton %} {% for article in articles %}
        <h1><table><tr><td class="blog-date">{{ article.created_at | format_date:"%d. %b" }}</td><td><a href="{{article.url}}">{{article.title}}</a></td></tr></table></h1>
        <div class="blog-excerpt clearfix">
         {{article.excerpt}}
