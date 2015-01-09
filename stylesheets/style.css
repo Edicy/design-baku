@@ -371,6 +371,32 @@ width: 25%;
 
 #mobile-thirdmenu {display:none;}
 
+/* Voog cms style overrides */
+#wrap .edy-empty-bordered {
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px dashed #FFFFFF;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+}
+#wrap .placeholder {
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.5);
+}
+#wrap .edy-content-element-hover {
+  border: 1px solid #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#wrap .edy-texteditor-active {
+  outline: 1px solid rgba(255, 255, 255, 0.4);
+}
+#wrap .edy-texteditor-active:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.63);
+}
+
+#wrap .edy-taglist {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
 @media screen and (max-width: 768px) {
     .search-submit { display: none; }
 }
