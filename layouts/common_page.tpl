@@ -18,7 +18,7 @@
     <div class="innerwrap">
      <div id="content-column-left">
       {% include "Submenu" %}
-      <div id="content-inner" class="clearfix">
+      <div id="content-inner" class="clearfix" data-search-indexing-allowed="true">
        {% content %}
       </div>
       <div id="footer">

@@ -20,10 +20,10 @@
       {% include "Submenu" %}
       <div id="content-inner">
        <h1><table><tr><td class="blog-date">{{article.created_at | format_date:"%d. %b"}}</td><td>{% editable article.title %}</td></tr></table></h1>
-       <div class="blog-excerpt clearfix">
+       <div class="blog-excerpt clearfix" data-search-indexing-allowed="true">
         {% editable article.excerpt %}
        </div>
-       <div class="blog-body clearfix">
+       <div class="blog-body clearfix" data-search-indexing-allowed="true">
         {% editable article.body %}
        </div>
        {% if editmode %}
