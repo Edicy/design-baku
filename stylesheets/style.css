@@ -396,24 +396,22 @@ width: 25%;
 
 /* Voog cms style overrides */
 #wrap .edy-empty-bordered {
-  color: #FFFFFF;
-  color: rgba(255, 255, 255, 0.5);
-  border: 1px dashed #FFFFFF;
-  border: 1px dashed rgba(255, 255, 255, 0.5);
+  color: rgba(255,255,255,.33);
+  border-color: rgba(255,255,255,.33);
 }
-#wrap .placeholder {
-  color: #FFFFFF;
-  color: rgba(255, 255, 255, 0.5);
+#wrap .edy-texteditor-view.placeholder {
+  color: rgba(255,255,255,.5);
 }
 #wrap .edy-content-element-hover {
-  border: 1px solid #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-color: rgba(255,255,255,.1);
 }
 #wrap .edy-texteditor-active {
-  outline: 1px solid rgba(255, 255, 255, 0.4);
+  outline-color: rgba(255,255,255,.2);
 }
-#wrap .edy-texteditor-active:hover {
-  outline: 1px solid rgba(255, 255, 255, 0.63);
+
+#wrap .edy-fe-field-active,
+#wrap .edy-fe-active .edy-fe-field:hover {
+  outline-color: rgba(255,255,255,.1);
 }
 
 #wrap .edy-taglist {
