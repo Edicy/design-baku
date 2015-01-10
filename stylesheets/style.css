@@ -52,15 +52,12 @@ font-weight: bold;
 margin: 5px 0;
 }
 
-.edy-positionable-container-left,
-.edy-positionable-container-right {
-  width: 45%;
-}
+/* Editable content image */
 .edy-positionable-container-left {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .edy-positionable-container-right {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .edy-image-container-with-title:after {
   display: block;
