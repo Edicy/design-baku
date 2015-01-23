@@ -72,6 +72,14 @@ margin: 5px 0;
   hyphens: auto;
 }
 
+.content-hyphenate {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 #wrap {
 
 }
@@ -468,4 +476,15 @@ width: 25%;
         padding: 5px;
       }
         #mobile-thirdmenu .active a {}
+}
+
+#content .edy-btn-removecomment {
+  position: relative;
+  top: 2px;
+  color: rgba(255,255,255,1) !important;
+  line-height: 0 !important;
+}
+
+#content .edy-btn-removecomment:hover {
+  text-decoration: none;
 }

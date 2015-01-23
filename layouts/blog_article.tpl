@@ -4,7 +4,7 @@
   {% include "SiteHeader" %}
 	</head>
 	<body>
-  <div id="wrap">
+  <div id="wrap" class="content-hyphenate">
    <div id="header" class="clearfix">
     <div class="innerwrap">
      {% include "Langmenu" %}
